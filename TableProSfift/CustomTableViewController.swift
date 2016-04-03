@@ -11,6 +11,7 @@ import UIKit
 class CustomTableViewController: UITableViewController {
     
     
+    
     var data = ["Record one" : "Идейные соображения высшего порядка",
                 "Record two" : "Консультация с широким активом позволяет выполнять важные задания",
                 "Record three" : "Развитие различных форм деятельности влечет за собой процесс внедрения ",
