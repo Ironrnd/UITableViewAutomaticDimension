@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NNL-px-MBb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uon-Wz-3YW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Custom Table View Controller-->
+        <!--Table List-->
         <scene sceneID="PiZ-dA-Sdb">
             <objects>
                 <tableViewController id="NNL-px-MBb" customClass="CustomTableViewController" customModule="TableProSfift" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" id="lek-Du-Do7" customClass="KeyValueCell" customModule="TableProSfift" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lek-Du-Do7" id="0x0-t6-Y5G">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -57,8 +57,27 @@
                             <outlet property="delegate" destination="NNL-px-MBb" id="BZS-14-s9U"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Table List" id="9qV-hT-h6M"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oop-dz-xSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320" y="386"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DQ0-WL-ACm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uon-Wz-3YW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ECu-LH-Nc0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NNL-px-MBb" kind="relationship" relationship="rootViewController" id="h83-9D-7aN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hI5-1o-xxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508" y="386"/>
         </scene>

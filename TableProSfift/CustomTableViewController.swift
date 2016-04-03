@@ -30,6 +30,31 @@ class CustomTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = true
+        
+        
+        // Свойства UINavigationController, которые скрывают UINavigationBar при различных событиях
+        /*
+        navigationController?.hidesBarsOnTap
+        navigationController?.hidesBarsWhenKeyboardAppears
+        navigationController?.hidesBarsWhenVerticallyCompact
+        navigationController?.hidesBottomBarWhenPushed
+ */
+        
+    }
+    
+    
+    // Для контроллера, который должен показывать UINavigationBar
+ /*
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnSwipe = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+   */
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
